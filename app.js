@@ -6,17 +6,21 @@ const path = require("path");
 const app = express();
 const router = express.Router();
 
+// Use Public File 
+// For CSS Refrencing
+app.use(express.static(path.join(__dirname, '/public')));
+
 // Routes
 router.get('/list', (req, res) => {
-    res.sendFile(path.join(__dirname + '/views/index.html'));
+	res.sendFile(path.join(__dirname + '/views/index.html'));
 });
 
 router.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname + '/views/login.html'));
+	res.sendFile(path.join(__dirname + '/views/login.html'));
 });
 
 router.get('/addtolist', (req, res) => {
-    res.sendFile(path.join(__dirname + '/views/listadd.html'));
+	res.sendFile(path.join(__dirname + '/views/listadd.html'));
 });
 
 // Start Server

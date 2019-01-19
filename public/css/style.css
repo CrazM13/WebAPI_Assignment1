@@ -1,0 +1,27 @@
+body {
+	background-color: #444488;
+}
+
+form {
+	background-color: #666688;
+}
+
+ol {
+	width: 33%;
+}
+
+li {
+	background-color: #666688;
+}
+
+a:link, a:visited { 
+	background-color: #666688;
+	color: #000044;
+	text-decoration: underline;
+	cursor:pointer;
+}
+
+a:link:active, a:visited:active {
+	background-color: #666688;
+	color: #333333;
+}
