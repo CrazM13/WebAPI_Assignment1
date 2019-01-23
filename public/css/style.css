@@ -37,3 +37,7 @@ a:link:active, a:visited:active {
 	border: 4px solid #000000;
 	padding: 16px;
 }
+
+h1, h2 {
+	color: #E0E0E0;
+}
