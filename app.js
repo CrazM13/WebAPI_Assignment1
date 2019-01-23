@@ -11,6 +11,10 @@ const router = express.Router();
 app.use(express.static(path.join(__dirname, '/public')));
 
 // Routes
+router.get('/', (req, res) => {
+	res.redirect('/list');
+});
+
 router.get('/list', (req, res) => {
 	res.sendFile(path.join(__dirname + '/views/index.html'));
 });
